@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: bm;
+  src: url(./BlackMango-Black.otf);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* background-color: #0a0b0d; */
+  background-image: url('/stars-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 0 20px;
+}
+
+.bm {
+  font-family: bm;
+}
+
+.glow {
+    filter: drop-shadow(rgb(81, 147, 194) -20px 0px 1.75rem);
+}
+
+.imgbounce {
+  animation: 4s ease-in-out 0s infinite normal none running float;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.color {
+  color: #5f5f5f60;
+}
+
+.circular-movement {
+  animation: circular 20s linear infinite;
+}
+
+@keyframes circular {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circular-movement-reverse {
+  animation: circularReverse 20s linear infinite;
+}
+
+@keyframes circularReverse {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.rotatebreak{
+  animation: rotatebreakAnim 1s infinite;
+}
+@keyframes rotatebreakAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
